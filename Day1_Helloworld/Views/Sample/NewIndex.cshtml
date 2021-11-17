@@ -1,0 +1,50 @@
+﻿@model Day1_Helloworld.Models.SampleModel
+
+@{
+    ViewBag.Title = "NewIndex";
+}
+
+<h2>NewIndex</h2>
+
+<div>
+    <h4>SampleModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SampleId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SampleId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TestName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TestName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SampleResult)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SampleResult)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
