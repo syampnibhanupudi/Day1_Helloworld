@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using Day1_Helloworld.Models;
+using System.Web.Mvc;
 
 namespace Day1_Helloworld.Controllers
 {
@@ -24,7 +25,7 @@ namespace Day1_Helloworld.Controllers
 
         // POST: CRUD/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(SampleModel sampleModel) /*model binding*/
         {
             try
             {
@@ -61,6 +62,7 @@ namespace Day1_Helloworld.Controllers
         }
 
         // GET: CRUD/Delete/5
+        [HttpGet]
         public ActionResult Delete(int id)
         {
             return View();

@@ -20,11 +20,18 @@ namespace Day1_Helloworld.Controllers
             return View();
         }
 
+        [ActionName("ContactUs")]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            return Redire
+        }
+
+        [NonAction]
+        public string getSampleName()
+        {
+            return "generated from DB";
         }
     }
 }
