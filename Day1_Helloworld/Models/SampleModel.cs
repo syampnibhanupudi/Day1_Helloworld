@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,6 +9,7 @@ namespace Day1_Helloworld.Models
     public class SampleModel
     {
         public int SampleId { get; set; }
+        [Required]
         public string TestName { get; set; }
         public  string  SampleResult { get; set; }
         public int RequestId { get; set; }

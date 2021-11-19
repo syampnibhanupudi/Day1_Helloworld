@@ -24,5 +24,23 @@ namespace Day1_Helloworld.Controllers
             sampleModel = sampleModels[1];
             return View(sampleModel);
         }
+
+        public ActionResult DeleteSample(int id)
+        {
+            SampleModel sampleModel = new SampleModel();
+            List<SampleModel> sampleModels = sampleModel.GetSampleModels();
+            List<SampleModel> sampleModels1 = sampleModel.GetSampleModels();
+            foreach (var item in sampleModels)
+            {
+                if(item.SampleId == id)
+                {
+                    sampleModels1.Remove(item);
+                    //write db query for delete
+                }
+            } //LINQ 
+            //var myitem = sampleModels.Where(t => t.SampleId == id);
+            //sampleModels.Remove(myitem);
+            return View("Index", sampleModels1);
+        }
     }
 }
