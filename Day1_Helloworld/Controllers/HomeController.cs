@@ -24,8 +24,8 @@ namespace Day1_Helloworld.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+            return View("Contact");
 
-            return Redire
         }
 
         [NonAction]

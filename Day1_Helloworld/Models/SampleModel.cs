@@ -8,13 +8,16 @@ namespace Day1_Helloworld.Models
 {
     public class SampleModel
     {
+        
         public int SampleId { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Test Name is always mandatory")]
         public string TestName { get; set; }
+        
         public  string  SampleResult { get; set; }
         public int RequestId { get; set; }
 
-
+        [RegularExpression("[0-9a-zA-Z]+",ErrorMessage ="Allowed Only Non-Special Characters")]
+        public string PlainText { get; set; }
         /// <summary>
         /// retrieve the samples from DB
         /// </summary>

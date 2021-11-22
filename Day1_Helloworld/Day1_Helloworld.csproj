@@ -127,6 +127,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\LogAttribute.cs" />
     <Compile Include="Models\SampleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -172,10 +173,10 @@
     <Content Include="Views\Sample\NewIndex.cshtml" />
     <Content Include="Views\CRUD\Index.cshtml" />
     <Content Include="Views\CRUD\Create.cshtml" />
+    <Content Include="Views\Clinic\Index.cshtml" />
+    <Content Include="Views\Clinic\Index2.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Clinic\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
